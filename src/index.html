@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="flex flex-wrap gap-10 justify-between items-center px-32 py-4 bg-white max-md:px-5"
+        aria-label="Main navigation">
+        <div
+            class="flex flex-wrap gap-4 items-center self-stretch my-auto font-semibold min-w-[240px] max-md:max-w-full">
+            <a href="/" class="self-stretch my-auto text-3xl tracking-tighter leading-none text-neutral-900"
+                aria-label="HireGo Home">
+                HireGo
+            </a>
+            <div
+                class="flex flex-wrap gap-2 items-start self-stretch my-auto text-base tracking-tight min-w-[240px] text-black text-opacity-80 max-md:max-w-full">
+                <button class="flex gap-1 items-start p-2 whitespace-nowrap" aria-expanded="false">
+                    <span>Products</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <button class="flex gap-1 items-start p-2 whitespace-nowrap" aria-expanded="false">
+                    <span>Solutions</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+
+                </button>
+                <button class="flex gap-1 items-start p-2" aria-expanded="false">
+                    <span>Why HireGo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+
+                </button>
+                <a href="/pricing" class="gap-1 p-2 whitespace-nowrap">Pricing</a>
+                <button class="flex gap-1 items-start p-2 whitespace-nowrap" aria-expanded="false">
+                    <span>Resources</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div
+            class="flex gap-2 items-center self-stretch my-auto text-base font-medium tracking-tight min-w-[240px] text-black text-opacity-80">
+            <button
+                class="flex gap-2 items-start self-stretch px-4 py-2 my-auto text-center whitespace-nowrap border border-solid border-black border-opacity-20 rounded-[999px]"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+                </svg>
+                <span>English</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </button>
+            <a href="/login"
+                class="flex-1 shrink gap-1 self-stretch px-4 py-2 my-auto w-24 text-center border border-solid border-black border-opacity-20 rounded-[999px]">
+                Log in
+            </a>
+            <a href="/demo"
+                class="gap-1 self-stretch px-4 py-2 my-auto text-white border border-solid bg-black bg-opacity-80 border-black border-opacity-30 rounded-[999px]">
+                Request a demo
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <div class="pt-32 pl-20 bg-blue-200 rounded-none max-md:pt-24 max-md:pl-5" role="region"
+        aria-label="Global People Platform Introduction">
+        <div class="flex gap-5 max-md:flex-col">
+            <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                <div
+                    class="flex flex-col items-start mt-2.5 w-full text-lg leading-none max-md:mt-10 max-md:max-w-full">
+                    <h1
+                        class="self-stretch text-6xl font-semibold tracking-tighter leading-[64px] text-black text-opacity-80 max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+                        HireGO is your<br />all-in-one<br />Global People Platform
+                    </h1>
+                    <div class="flex flex-col mt-6 tracking-tighter text-black text-opacity-70">
+                        <div class="flex gap-2 items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <div>G3's Leader in global employment platforms</div>
+                        </div>
+                        <div class="flex gap-2 items-start self-start mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <div>90% customer satisfaction rate</div>
+                        </div>
+                    </div>
+                    <button
+                        class="flex gap-1 justify-center items-center px-6 py-4 mt-6 font-medium tracking-tight text-center text-white border border-solid bg-black bg-opacity-80 border-black border-opacity-30 min-h-[56px] rounded-[999px] max-md:px-5"
+                        aria-label="Request a demo">
+                        <span class="self-stretch my-auto">Request a demo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <div
+                    class="flex relative flex-col pt-5 pr-11 pb-64 w-full min-h-[671px] rounded-[48px_0px_48px_0px] max-md:pb-24 max-md:mt-10 max-md:max-w-full">
+                    <img loading="lazy" src="./images/img-1.png" class="object-cover absolute inset-0 size-full"
+                        alt="Platform overview illustration" />
+                    <div class="flex relative flex-col self-end max-w-full min-h-[72px] w-[409px] max-md:mr-2.5">
+                        <div class="flex justify-center w-full">
+                            <div class="flex flex-col w-[17px]">
+                                <div
+                                    class="flex bg-amber-300 border border-amber-300 border-solid min-h-[25px] rounded-[45px_0px_0px_0px] w-[17px]">
+                                </div>
+                                <div
+                                    class="flex flex-1 bg-amber-300 border border-amber-300 border-solid min-h-[1px] w-[17px]">
+                                </div>
+                                <div
+                                    class="flex bg-amber-300 border border-amber-300 border-solid min-h-[25px] rounded-[45px_0px_0px_0px] w-[17px]">
+                                </div>
+                            </div>
+                            <div
+                                class="flex-1 shrink gap-1.5 py-3.5 my-auto text-2xl tracking-normal leading-none bg-amber-300 border border-amber-300 border-solid min-w-[240px] text-black text-opacity-80">
+                                Expand your team and hire globally
+                            </div>
+                            <img loading="lazy" src="./images/svg-1.svg"
+                                class="object-contain shrink-0 aspect-[0.47] w-[25px]" alt="" />
+                        </div>
+                    </div>
+                    <div class="relative self-start max-md:max-w-full">
+                        <div class="flex gap-5 max-md:flex-col">
+                            <div class="flex flex-col w-[62%] max-md:ml-0 max-md:w-full">
+                                <div class="flex relative flex-col grow max-md:mt-10">
+                                    <div class="flex flex-col self-center max-w-full min-h-[75px] w-[262px]">
+                                        <div class="flex w-full">
+                                            <img loading="lazy" src="./images/svg-2.svg"
+                                                class="object-contain shrink-0 aspect-[0.47] w-[25px]" alt="" />
+                                            <div
+                                                class="flex-1 shrink gap-1.5 self-start py-3.5 text-2xl tracking-normal leading-none text-white bg-green-500 border border-green-500 border-solid">
+                                                Immigration support
+                                            </div>
+                                            <div class="flex flex-col rotate-[3.141592653589793rad] w-[18px]">
+                                                <div
+                                                    class="flex bg-green-500 border border-green-500 border-solid min-h-[25px] rounded-[46px_0px_0px_0px] w-[18px]">
+                                                </div>
+                                                <div
+                                                    class="flex flex-1 bg-green-500 border border-green-500 border-solid min-h-[3px] w-[18px]">
+                                                </div>
+                                                <div
+                                                    class="flex bg-green-500 border border-green-500 border-solid min-h-[25px] rounded-[46px_0px_0px_0px] w-[18px]">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col mt-44 w-full text-2xl tracking-normal leading-none text-white min-h-[69px] max-md:mt-10">
+                                        <div class="flex w-full">
+                                            <img loading="lazy" src="./images/svg-3.svg"
+                                                class="object-contain shrink-0 aspect-[0.47] w-[23px]" alt="" />
+                                            <div
+                                                class="flex-1 shrink gap-1 self-start py-3 bg-blue-500 border border-blue-500 border-solid min-w-[240px]">
+                                                Pay anyone, anywhere in minutes
+                                            </div>
+                                            <img loading="lazy" src="./images/svg-4.svg"
+                                                class="object-contain shrink-0 w-4 aspect-[0.33]" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col ml-5 w-[38%] max-md:ml-0 max-md:w-full">
+                                <div
+                                    class="flex relative flex-col self-stretch my-auto w-full min-h-[73px] max-md:mt-10">
+                                    <div class="flex justify-center w-full">
+                                        <div class="flex flex-col w-[18px]">
+                                            <div
+                                                class="flex bg-violet-500 border border-violet-500 border-solid min-h-[25px] rounded-[46px_0px_0px_0px] w-[18px]">
+                                            </div>
+                                            <div
+                                                class="flex flex-1 bg-violet-500 border border-violet-500 border-solid min-h-[3px] w-[18px]">
+                                            </div>
+                                            <div
+                                                class="flex bg-violet-500 border border-violet-500 border-solid min-h-[25px] rounded-[46px_0px_0px_0px] w-[18px]">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex-1 shrink gap-1.5 py-3.5 my-auto text-2xl tracking-normal leading-none text-white bg-violet-500 border border-violet-500 border-solid">
+                                            Set your team up
+                                        </div>
+                                        <img loading="lazy" src="./images/svg-5.svg"
+                                            class="object-contain shrink-0 aspect-[0.47] w-[25px]" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero -->
+
+    <!-- Trusted Companies -->
+    <div class="flex flex-col items-center pt-20 pr-24 pb-24 pl-28 text-4xl font-semibold tracking-tighter leading-10 text-center bg-white text-black text-opacity-80 max-md:px-5"
+        role="region" aria-label="Trusted Companies Section">
+        <div class="w-[693px] max-md:max-w-full">
+            Trusted by
+            <span class="text-black">25,000+</span>
+            companies from startups to enterprise
+        </div>
+        <img loading="lazy" src="./images/companies.png"
+            class="object-contain mt-16 max-w-full bg-blend-normal aspect-[9.09] w-[1233px] max-md:mt-10"
+            alt="Logos of trusted companies and enterprises" />
+    </div>
+    <!-- Trusted Companies -->
+
+    <!-- Body -->
+    <div class="flex flex-col">
+        <div
+            class="flex flex-col items-center px-32 py-24 w-full bg-zinc-800 rounded-[64px] max-md:px-5 max-md:max-w-full">
+            <div class="flex flex-col items-center w-full max-w-[1200px] max-md:max-w-full">
+                <h1
+                    class="text-6xl font-semibold tracking-tighter text-center text-white leading-[64px] w-[693px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+                    You can do it all.
+                    <br />
+                    With HireGO.
+                </h1>
+                <div class="flex flex-wrap gap-6 justify-center mt-12 w-full max-md:mt-10">
+                    <div
+                        class="flex flex-col flex-1 shrink self-start p-12 rounded-3xl basis-0 bg-white bg-opacity-10 min-w-[240px] max-md:px-5 max-md:max-w-full">
+                        <div class="flex flex-col w-full max-md:max-w-full">
+                            <h2
+                                class="text-4xl font-semibold tracking-tighter leading-tight text-white max-md:max-w-full">
+                                Hire international talent
+                            </h2>
+                            <p
+                                class="mt-4 text-lg tracking-tighter leading-6 text-white text-opacity-70 max-md:max-w-full">
+                                Instead of setting up your own entities, experience the speed of HireGO's automated
+                                global hiring. Create compliant employment agreements and set up payroll and benefits—in
+                                a matter of clicks.
+                            </p>
+                        </div>
+                        <button
+                            class="flex gap-2 items-center justify-center px-6 py-3 mt-8 max-w-full text-lg font-medium tracking-tighter leading-none bg-white rounded-[999px] text-black text-opacity-80 w-[261px] max-md:px-5">
+                            <span>Hire international talent</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </button>
+                        <img loading="lazy" src="./images/img-2.png"
+                            alt="International hiring platform interface showing employee profiles and hiring tools"
+                            class="object-contain mt-8 max-w-full rounded-3xl aspect-[1.34] w-[482px]" />
+                    </div>
+                    <div
+                        class="flex flex-col flex-1 shrink text-lg tracking-tighter basis-24 min-w-[240px] max-md:max-w-full">
+                        <div class="flex flex-col p-12 w-full rounded-3xl bg-neutral-600 max-md:px-5 max-md:max-w-full">
+                            <h2
+                                class="text-4xl font-semibold tracking-tighter leading-tight text-white max-md:max-w-full">
+                                Hire contractors
+                            </h2>
+                            <p class="mt-4 leading-6 text-white text-opacity-70 max-md:max-w-full">
+                                Generate, edit, and sign compliant contracts in minutes and access management tools to
+                                streamline paperwork, onboarding, and payments.
+                            </p>
+                            <button
+                                class="flex gap-2 items-center justify-center px-6 py-3 mt-4 max-w-full font-medium leading-none bg-white rounded-[999px] text-black text-opacity-80 w-[203px] max-md:px-5">
+                                <span>Hire contractors</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div
+                            class="flex flex-col flex-1 p-12 mt-6 w-full bg-blue-200 rounded-3xl text-black text-opacity-80 max-md:px-5 max-md:max-w-full">
+                            <h2 class="text-4xl font-semibold tracking-tighter leading-10 max-md:max-w-full">
+                                Convert contractors to employees
+                            </h2>
+                            <p class="mt-4 leading-6 text-black text-opacity-70 max-md:max-w-full">
+                                Assess global worker misclassification risks and compliantly convert contractors to
+                                full-timers, all under one platform.
+                            </p>
+                            <button
+                                class="flex gap-2 items-center justify-center px-6 py-3 mt-4 max-w-full font-medium leading-none bg-white rounded-[999px] w-[231px] max-md:px-5">
+                                <span>Convert contractors</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center py-20 max-w-full w-[1200px]">
+                <div class="w-full border border-solid border-white border-opacity-20 min-h-[1px]" role="separator">
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-4 justify-center items-start max-w-full w-[1200px]">
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5">
+                    <div class="text-7xl font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        5,000+
+                    </div>
+                    <div class="mt-4 text-lg tracking-wide leading-none text-white">
+                        Loved by 5,000+ Team Members
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5">
+                    <div class="text-7xl font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        25,000+
+                    </div>
+                    <div class="mt-4 text-lg tracking-wide leading-none text-white">
+                        Trusted by 25,000+ customers
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5">
+                    <div class="text-7xl font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        48 hrs
+                    </div>
+                    <div class="mt-4 text-lg tracking-wide leading-none text-white">
+                        Onboard talent in as little as 48 hours
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-start py-24 pl-32 w-full bg-neutral-100 max-md:pl-5 max-md:max-w-full">
+            <h2
+                class="gap-2.5 max-w-full text-6xl font-semibold tracking-tighter text-center leading-[64px] text-black text-opacity-80 w-[1200px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+                Take your business
+                <br />
+                to the next level.
+            </h2>
+            <div class="flex flex-col mt-16 text-lg font-medium max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-wrap gap-4 items-center max-md:max-w-full">
+                    <div class="flex flex-col self-stretch py-8 pr-8 my-auto min-w-[240px] w-[592px] max-md:max-w-full">
+                        <h3
+                            class="text-4xl font-semibold tracking-tighter leading-10 text-orange-400 max-md:max-w-full">
+                            Culture and performance.
+                            <br />
+                            It's up and up.
+                        </h3>
+                        <p class="mt-6 tracking-tight leading-6 text-black text-opacity-50 max-md:max-w-full">
+                            Develop feedback loops, set KPIs and design custom performance reviews. Quickly build a
+                            positive performance culture for your business — where everyone is aiming for the same
+                            goals.
+                        </p>
+                        <button
+                            class="flex gap-2 items-center justify-center px-6 py-3 mt-6 max-w-full tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] text-black text-opacity-80 w-[283px] max-md:px-5">
+                            <span>Performance Management</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <img loading="lazy" src="./images/img-3.png"
+                        alt="Performance management dashboard showing KPIs and feedback metrics"
+                        class="object-contain self-stretch my-auto rounded-3xl aspect-[1.61] min-w-[240px] w-[973px] max-md:max-w-full" />
+                </div>
+                <div class="flex flex-wrap gap-4 items-center self-start mt-12 max-md:mt-10 max-md:max-w-full">
+                    <img loading="lazy" src="./images/img-4.png"
+                        alt="Payroll software interface showing payment processing and employee information"
+                        class="object-contain self-stretch my-auto rounded-3xl aspect-square min-w-[240px] w-[592px] max-md:max-w-full" />
+                    <div class="flex flex-col self-stretch py-8 pl-8 my-auto min-w-[240px] w-[592px] max-md:max-w-full">
+                        <h3
+                            class="text-4xl font-semibold tracking-tighter leading-10 text-violet-500 max-md:max-w-full">
+                            It's payroll software.
+                            <br />
+                            Just faster.
+                        </h3>
+                        <p class="mt-6 tracking-tight leading-6 text-black text-opacity-50 max-md:max-w-full">
+                            Save your time, pay your people with automated payroll. Enjoy the benefits of Real Time
+                            Information (RTI) and take care of workforce planning - all in one simple place.
+                        </p>
+                        <button
+                            class="flex gap-2 items-center justify-center px-6 py-3 mt-6 max-w-full tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] text-black text-opacity-80 w-[203px] max-md:px-5">
+                            <span>Payroll Features</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body -->
+
+    <!-- Across Borders -->
+    <div class="flex flex-col items-center px-32 py-24 bg-zinc-800 max-md:px-5" role="region" aria-label="Testimonials">
+        <h2
+            class="gap-2.5 max-w-full text-6xl font-semibold tracking-tighter text-center text-white leading-[64px] w-[1200px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+            We help teams grow faster across borders.
+        </h2>
+        <div class="flex flex-col items-center mt-12 max-md:mt-10 max-md:max-w-full">
+            <div class="flex overflow-hidden flex-wrap gap-4 items-center bg-blue-200 rounded-3xl max-md:max-w-full"
+                role="article" aria-label="Customer testimonial">
+                <div
+                    class="flex flex-col self-stretch p-12 my-auto min-w-[240px] w-[592px] max-md:px-5 max-md:max-w-full">
+                    <div class="flex flex-col w-full max-md:max-w-full">
+                        <div class="flex gap-2.5 items-start self-start px-2">
+                            <img loading="lazy" src="./images/svg-6.svg"
+                                class="object-contain bg-blend-normal aspect-[0.98] w-[52px]" alt="Company logo" />
+                        </div>
+                        <blockquote class="flex flex-col mt-4 w-full text-black text-opacity-80 max-md:max-w-full">
+                            <p class="text-3xl font-semibold tracking-tighter leading-9 max-md:max-w-full">
+                                "Saving time and simplifying the process and saving money. It was the triple trifecta."
+                            </p>
+                            <cite class="mt-6 text-lg tracking-tight leading-none max-md:max-w-full">
+                                Ally Fekaiki, CEO - Soho, New York
+                            </cite>
+                        </blockquote>
+                    </div>
+                    <button
+                        class="flex flex-col justify-center px-6 py-3 mt-8 max-w-full text-lg font-medium tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] text-black text-opacity-80 w-[167px] max-md:px-5"
+                        aria-label="Learn more about the testimonial">
+                        <div class="flex gap-2 items-start w-full">
+                            <span>Learn more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <img loading="lazy" src="./images/img-5.png"
+                    class="object-contain self-stretch my-auto aspect-square min-w-[240px] w-[592px] max-md:max-w-full"
+                    alt="Customer testimonial illustration" />
+            </div>
+            <div class="flex gap-8 items-center mt-6" role="navigation" aria-label="Testimonial navigation">
+                <button
+                    class="flex overflow-hidden gap-2.5 items-center self-stretch p-2 my-auto w-10 h-10 bg-white bg-opacity-20 rounded-[999px]"
+                    aria-label="Previous testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="flex gap-4 items-start self-stretch my-auto" role="tablist" aria-label="Testimonial slides">
+                    <button class="flex shrink-0 w-3.5 h-3.5 bg-white rounded-full" role="tab" aria-selected="true"
+                        aria-label="Testimonial slide 1"></button>
+                    <button class="flex shrink-0 w-3.5 h-3.5 rounded-full bg-white bg-opacity-20" role="tab"
+                        aria-selected="false" aria-label="Testimonial slide 2"></button>
+                    <button class="flex shrink-0 w-3.5 h-3.5 rounded-full bg-white bg-opacity-20" role="tab"
+                        aria-selected="false" aria-label="Testimonial slide 3"></button>
+                    <button class="flex shrink-0 w-3.5 h-3.5 rounded-full bg-white bg-opacity-20" role="tab"
+                        aria-selected="false" aria-label="Testimonial slide 4"></button>
+                </div>
+                <button
+                    class="flex overflow-hidden gap-2.5 items-center self-stretch p-2 my-auto w-10 h-10 bg-white bg-opacity-20 rounded-[999px]"
+                    aria-label="Next testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Across Borders -->
+
+    <!-- Three Steps -->
+    <div class="flex flex-col px-32 py-24 bg-white max-md:px-5" role="region" aria-labelledby="get-started-title">
+        <h2 id="get-started-title"
+            class="gap-2.5 max-w-full text-6xl font-semibold tracking-tighter text-center leading-[64px] text-black text-opacity-80 w-[1200px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+            Get started with HireGo
+            <br />
+            in three easy steps.
+        </h2>
+        <div class="flex flex-wrap gap-4 items-start mt-12 max-md:mt-10 max-md:max-w-full">
+            <img loading="lazy" src="./images/img-6.png" alt="HireGo onboarding process illustration"
+                class="object-contain aspect-square min-w-[240px] rounded-[32px] w-[592px] max-md:max-w-full" />
+            <div class="flex flex-col items-center min-w-[240px] w-[592px] max-md:max-w-full">
+                <div
+                    class="flex flex-wrap gap-4 items-start px-10 py-8 max-w-full bg-neutral-100 rounded-[32px] w-[592px] max-md:px-5">
+                    <div
+                        class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                        <div class="px-1.5 w-10 h-10 bg-violet-500 rounded-[999px]" aria-hidden="true">1</div>
+                    </div>
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                        <h3
+                            class="text-3xl font-semibold tracking-tighter leading-none text-black text-opacity-80 max-md:max-w-full">
+                            Book a call
+                        </h3>
+                        <p class="mt-3 text-lg tracking-tight leading-6 text-black text-opacity-70 max-md:max-w-full">
+                            Book a call with our global workforce consultants. We'll set you up with a free account
+                            ready to suit your team's needs.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-wrap gap-4 items-start px-10 py-8 mt-2 max-w-full bg-neutral-100 rounded-[32px] w-[592px] max-md:px-5">
+                    <div
+                        class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                        <div class="px-1.5 w-10 h-10 bg-violet-500 rounded-[999px]" aria-hidden="true">2</div>
+                    </div>
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                        <h3
+                            class="text-3xl font-semibold tracking-tighter leading-none text-black text-opacity-80 max-md:max-w-full">
+                            Add your people
+                        </h3>
+                        <p class="mt-3 text-lg tracking-tight leading-6 text-black text-opacity-70 max-md:max-w-full">
+                            From new hires to your existing workforce, onboard effortlessly with our self-serve
+                            platform.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-wrap gap-4 items-start px-10 py-8 mt-2 max-w-full bg-neutral-100 rounded-[32px] w-[592px] max-md:px-5">
+                    <div
+                        class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                        <div class="px-1.5 w-10 h-10 bg-violet-500 rounded-[999px]" aria-hidden="true">3</div>
+                    </div>
+                    <div
+                        class="flex flex-col flex-1 shrink text-lg basis-0 min-w-[240px] text-black text-opacity-80 max-md:max-w-full">
+                        <h3 class="text-3xl font-semibold tracking-tighter leading-none max-md:max-w-full">
+                            Dedicated onboarding
+                        </h3>
+                        <p class="mt-3 tracking-tight leading-6 text-black text-opacity-70 max-md:max-w-full">
+                            From navigating local laws to support for your team members, our dedicated team will help
+                            you get set up seamlessly.
+                        </p>
+                        <button
+                            class="flex flex-col justify-center px-6 py-3 mt-3 max-w-full font-medium tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] w-[157px] max-md:px-5"
+                            aria-label="Start onboarding process">
+                            <div class="flex gap-2 items-start w-full">
+                                <span>Start Now</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Three Steps -->
+
+    <!-- Footer -->
+    <div class="flex flex-col items-center px-32 py-24 bg-zinc-900 max-md:px-5" role="contentinfo">
+        <div class="flex flex-col items-center w-full text-center max-w-[1200px] max-md:max-w-full">
+            <div
+                class="flex flex-col items-center w-full text-6xl font-semibold tracking-tighter leading-none text-white max-md:text-4xl">
+                <div class="max-md:max-w-full max-md:text-4xl">Work easy.</div>
+                <div class="mt-2 max-md:max-w-full max-md:text-4xl">Grow further with HireGo.</div>
+            </div>
+            <button
+                class="flex gap-1 justify-center items-center px-6 py-4 mt-12 text-lg font-medium tracking-tight leading-none bg-white min-h-[56px] rounded-[999px] text-black text-opacity-80 max-md:px-5 max-md:mt-10"
+                tabindex="0">
+                <span class="self-stretch my-auto">Request a demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col justify-center items-center py-20 max-w-full w-[1200px]">
+            <div class="w-full border border-solid border-white border-opacity-20 min-h-[1px]" role="separator"></div>
+        </div>
+        <div class="flex flex-col pb-6 w-full bg-blend-normal max-w-[1200px] max-md:max-w-full">
+            <div class="flex flex-wrap gap-4 items-start w-full bg-blend-normal min-h-[643px] max-md:max-w-full">
+                <div class="flex flex-col pt-8 pb-24 w-72 bg-blend-normal min-w-[240px]">
+                    <div class="text-3xl font-semibold tracking-tighter leading-none text-white">HireGo</div>
+                    <nav class="flex gap-6 items-start pt-9 pb-1.5 mt-1.5 max-w-full bg-blend-normal min-h-[80px] w-[230px]"
+                        aria-label="Social Media Links">
+                        <a href="#" tabindex="0"><img loading="lazy" src="./images/twitter.svg"
+                                class="object-contain shrink-0 w-10 bg-blend-normal aspect-square"
+                                alt="Social Media Icon 1" /></a>
+                        <a href="#" tabindex="0"><img loading="lazy" src="./images/linkedin.svg"
+                                class="object-contain shrink-0 w-10 bg-blend-normal aspect-square"
+                                alt="Social Media Icon 2" /></a>
+                        <a href="#" tabindex="0"><img loading="lazy" src="./images/facebook.svg"
+                                class="object-contain shrink-0 w-10 bg-blend-normal aspect-square"
+                                alt="Social Media Icon 3" /></a>
+                        <a href="#" tabindex="0"><img loading="lazy" src="./images/insta.svg"
+                                class="object-contain shrink-0 w-10 bg-blend-normal aspect-square"
+                                alt="Social Media Icon 4" /></a>
+                    </nav>
+                </div>
+                <nav class="flex flex-wrap flex-1 shrink gap-4 items-start pb-24 text-sm leading-6 bg-blend-normal basis-0 min-h-[643px] min-w-[240px] max-md:max-w-full"
+                    aria-label="Footer Navigation">
+                    <div class="flex flex-col pt-8 pb-64 w-52 bg-blend-normal min-h-[547px] max-md:pb-24">
+                        <div class="font-medium text-white">How it works</div>
+                        <div
+                            class="flex flex-col pr-24 mt-6 w-full bg-blend-normal min-h-[199px] text-white text-opacity-40 max-md:pr-5">
+                            <a href="#" tabindex="0">Hire Employees</a>
+                            <a href="#" tabindex="0" class="mt-4">Hire Contractors</a>
+                            <a href="#" tabindex="0" class="mt-4">Run Global Payroll</a>
+                            <a href="#" tabindex="0" class="mt-4">App Store</a>
+                            <a href="#" tabindex="0" class="mt-4">Open API</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pt-8 pb-28 bg-blend-normal min-h-[547px] w-[210px] max-md:pb-24">
+                        <div class="font-medium text-white">Solutions</div>
+                        <div
+                            class="flex flex-col pr-20 mt-6 w-full bg-blend-normal min-h-[358px] text-white text-opacity-40 max-md:pr-5">
+                            <a href="#" tabindex="0">Compliance</a>
+                            <a href="#" tabindex="0" class="mt-4">Payments</a>
+                            <a href="#" tabindex="0" class="mt-4">For Finance Teams</a>
+                            <a href="#" tabindex="0" class="mt-4">For Legal Teams</a>
+                            <a href="#" tabindex="0" class="mt-4">For Hiring Managers</a>
+                            <a href="#" tabindex="0" class="mt-4">Startup</a>
+                            <a href="#" tabindex="0" class="mt-4">Enterprise</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pt-8 bg-blend-normal h-[547px] w-[230px]">
+                        <div class="font-medium text-white">Resources</div>
+                        <div
+                            class="flex flex-col pr-24 mt-6 max-w-full bg-blend-normal min-h-[478px] text-white text-opacity-40 w-[230px] max-md:pr-5">
+                            <a href="#" tabindex="0">About</a>
+                            <a href="#" tabindex="0" class="mt-4">Blog</a>
+                            <a href="#" tabindex="0" class="mt-4">Support hub</a>
+                            <a href="#" tabindex="0" class="mt-4">Global Hiring Guide</a>
+                            <a href="#" tabindex="0" class="mt-4">Partner Program</a>
+                            <a href="#" tabindex="0" class="mt-4">Affiliates</a>
+                            <a href="#" tabindex="0" class="mt-4">Case Studies</a>
+                            <a href="#" tabindex="0" class="mt-4">Careers</a>
+                            <a href="#" tabindex="0" class="mt-4">Glossary</a>
+                            <a href="#" tabindex="0" class="mt-4">Press</a>
+                            <a href="#" tabindex="0" class="mt-4">Service Status</a>
+                            <a href="#" tabindex="0" class="mt-4">Worker Community</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <button
+                class="flex gap-2 items-center self-start mt-1.5 text-sm font-medium leading-none text-white whitespace-nowrap"
+                tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span class="self-stretch my-auto">English</span>
+            </button>
+            <div
+                class="flex flex-wrap gap-5 justify-between pt-5 mt-8 w-full text-xs border-t bg-blend-normal border-white border-opacity-20 max-md:max-w-full">
+                <div class="self-start mt-1.5 text-orange-50">© Copyright 2025. All Rights Reserved.</div>
+                <nav class="flex flex-wrap gap-4 items-start pt-2 pb-0.5 pl-4 bg-blend-normal min-h-[29px] text-white text-opacity-40"
+                    aria-label="Legal Links">
+                    <a href="#" tabindex="0">Privacy Policy</a>
+                    <a href="#" tabindex="0">Terms of Service</a>
+                    <a href="#" tabindex="0">Whistleblower Policy</a>
+                    <a href="#" tabindex="0">Cookie policy</a>
+                    <button tabindex="0">Cookie Settings</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+</body>
+
+</html>
